@@ -5,7 +5,8 @@ import Menu from './Menu/Menu';
 import MenuIcon from '../svgs/MenuIcon';
 import Image from '../../assets/images/logo.png';
 import CloseIcon from '../svgs/CloseIcon';
-
+import SearchIcon from '../svgs/SearchIcon';
+import AppNotificationIcon from '../svgs/AppNotificationIcon';
 const Container = styled.div`
     border: 1px solid ${({ theme }) => theme.grayBorder};
     position: fixed;
@@ -44,6 +45,10 @@ const Container = styled.div`
         padding: 1rem};
     } 
 `
+const UserName = styled.span`
+    border-left: 2px solid ${({ theme }) => theme.grayBorder};
+    padding-left: 2rem
+`
 
 
 
@@ -57,7 +62,12 @@ const Sidebar = () => {
     <>
       <OpenMenuIcon onClick={openMenu}><MenuIcon/>
         <img src={Image} alt="logo" style={{maxWidth: '125px'}}/>
-        <span className='d-inline-block d-lg-none'><ProfileImg src={require('../../../src/assets/images/userphoto.png').default} /></span>
+        <span  className='d-inline-block d-xl-none'>
+        <span className='d-none d-inline-block d-xl-none'><ProfileImg src={require('../../../src/assets/images/userphoto.png').default} /></span>
+      <span className='mx-2'><SearchIcon fill={'#C5C7CD'}/></span>
+      <span className='mx-2'><AppNotificationIcon fill={'#C5C7CD'} isOn={true}/></span>
+     
+      </span>
       </OpenMenuIcon>
       <Container menuOpened={menuOpened}>
         <div className='d-flex justify-content-between align-items-center w-100 pt-2'>

@@ -30,8 +30,8 @@ const Nav = () => {
   return (
     <Container>
       <h4>Dashboard</h4>
-      <span style={{marginLeft: 'auto'}}>
-         <span className='mx-3'><SearchIcon fill={'#C5C7CD'}/></span>
+      <span style={{marginLeft: 'auto'}} className='d-none d-xl-inline-block'>
+      <span className='mx-3'><SearchIcon fill={'#C5C7CD'}/></span>
       <span className='mx-3'><AppNotificationIcon fill={'#C5C7CD'} isOn={true}/></span>
       <UserName className='mx-3 d-none d-lg-inline-block'>Manoga Nimanja</UserName>
       <span className='d-none d-lg-inline-block'><ProfileImg src={require('../../../src/assets/images/userphoto.png').default} /></span>
