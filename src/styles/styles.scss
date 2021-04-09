@@ -1,0 +1,46 @@
+@import "~bootstrap/scss/bootstrap";
+body {
+  font-family: 'Poppins', sans-serif!important;
+  color: #252733!important;
+}
+.welcome-card-des {
+  font-size: 14px;
+  width: 50%;
+}
+.company-about {
+  display: flex;
+  align-items: center;
+  .logo {
+    width: 20%;
+  }
+  .des {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 18px;
+    margin-bottom: .2rem;
+  }
+  h5 {
+    font-size: 12px;
+  }
+  .welcome-card-des {
+    font-size: 12px;
+    width: 66%;
+  }
+  .company-about {
+    flex-direction: column;
+    align-items: baseline;
+    .des {
+      margin-left: 10px;
+      width: 100%;
+    }
+    .logo {
+      width: 40%;
+    }
+  }
+}
