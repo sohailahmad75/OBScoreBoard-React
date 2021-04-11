@@ -72,7 +72,7 @@ const Sidebar = () => {
       <Container menuOpened={menuOpened}>
         <div className='d-flex justify-content-between align-items-center w-100 pt-2'>
           <Profile/>
-          <span className='pb-1 mr-3 d-flex d-lg-none' style={{opacity : '.9'}} onClick={openMenu}  ><CloseIcon fill={'#4a4a4a'} size={17}/></span>
+          <span className='pb-1 mr-3 d-flex d-xl-none' style={{opacity : '.9'}} onClick={openMenu}  ><CloseIcon fill={'#4a4a4a'} size={17}/></span>
         </div>
         <Menu/>
       </Container>
